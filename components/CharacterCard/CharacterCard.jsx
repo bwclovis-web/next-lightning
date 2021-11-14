@@ -1,5 +1,4 @@
 import styles from  './card.module.scss'
-// import { format } from 'date-fns'
 import {format} from 'https://cdn.skypack.dev/date-fns'
 
 const CharacterCard = ({data}) => {

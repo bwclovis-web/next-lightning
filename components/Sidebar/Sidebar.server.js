@@ -14,7 +14,7 @@ const Sidebar = () => {
     return (
         <aside>
             <ul>
-                {ships.results.map((ship: { edited: any; name: string; manufacturer: string; cost_in_credits: string }) => {
+                {ships.results.map((ship) => {
                     return <SidebarItem data={ship} key={ship.edited} />
                 })}
             </ul>

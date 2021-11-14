@@ -1,15 +1,6 @@
-import {FC} from 'react'
-import { format } from 'date-fns'
-// import {format} from 'https://cdn.skypack.dev/date-fns?dts'
-interface DataI {
-    data: {
-        name: string
-        manufacturer: string
-        cost_in_credits: string
-        edited: string
-    }
-}
-const SidebarItem:FC<DataI> = ({data}) =>  {
+import {format} from 'https://cdn.skypack.dev/date-fns'
+
+const SidebarItem = ({data}) =>  {
     const editedOn = new Date(data.edited)
     return (
         <li>
