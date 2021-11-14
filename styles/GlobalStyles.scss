@@ -1,0 +1,166 @@
+
+  :root {
+    --cfBlue: #5680E9;
+    --seagull: #84CEEB;
+    --pictonBlue: #5AB9EA;
+    --pGray: #C1C8E4;
+    --amethyst: #8860D0;
+    --amethystGr: #453E52;
+    --amethystDk: #67499E;
+    --success: #E8BE56;
+    --white: #C3FAEC;
+    --trueWhite: #fff;
+    --black: #222;
+    --radius: 1rem;
+    --cast: .2rem;
+    --max-width: 1400px;
+  }
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  html {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--amethyst) var(--seagull);
+
+    &.open {
+      overflow: hidden;
+    }
+  }
+
+  /* Scrollbar Styles */
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: var(--seagull);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--amethyst) ;
+    border-radius: 6px;
+    border: 3px solid var(--seagull);
+  }
+
+  hr {
+    border: 0;
+    height: 8px;
+    background-size: 1500px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  input::-moz-focus-inner {
+    border:0; 
+    padding:0; 
+    margin:0;
+  }
+
+  ul, ol, dd {
+    margin:0; 
+    padding:0; 
+    list-style:none;
+  }
+
+  cite {
+    font-style:normal;
+  }
+
+  fieldset {
+    border-width:0; 
+    padding:0; 
+    margin:0;
+  }
+
+  .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: clamp(3rem, 6vw, 8rem);
+      width: 100%;
+  }
+
+  .split_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: clamp(2rem, 10vw, 8.4rem);
+
+    @media (min-width: 769px) {
+      flex-direction: row;
+    }
+
+    & > aside:first-child {
+      width: clamp(100vw, 6vw, 30vw);
+
+      h1 {
+        font-size: 2.8rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+
+      p:not(:last-child) {
+        padding: 0;
+      }
+
+      p:last-child {
+        padding: 0 0 2rem;
+      }
+    }
+
+    & > div:last-child {
+      min-width: 34%;
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.9);
+    z-index: 6;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
+
+  .widget {
+    border: 1px solid var(--pGray);
+    padding: 1.6rem;
+    border-radius: var(--radius);
+    box-shadow: 0 0 1rem rgba(0,0,0, 0.12);
+    margin-bottom: 2.6rem;
+  }
+
+  .youtube-blog {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
