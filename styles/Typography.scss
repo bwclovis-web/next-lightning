@@ -93,6 +93,11 @@
 
     .block-link {
         display: block;
+        padding: 1rem 0;
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
     }
 
     .default-list {

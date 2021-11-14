@@ -16,10 +16,9 @@ export default function Index({
   name = decodeURIComponent(name)
   city = decodeURIComponent(city)
 
-  console.log(name)
   return (
     <div className={styles.geoCard}>
-        <h1>{city} - <span>{region}</span></h1>
+        <h1><a href={`http://en.wikipedia.org/wiki/${city}`}>{city} - <span>{region}</span></a></h1>
         <div className={styles.country}>
           <p>Country: {country}</p>
           <Image

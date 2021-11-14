@@ -78,7 +78,7 @@ const Home = () => {
           <h2>Whats new in Next.JS 12</h2>
           <p>
             At the recent Next.js conference, Next.js 12 was introduced and here are some of the major take aways:
-            (this page is using Next.12 with features enabled.)
+            (this page is using Next.12 with some features enabled.)
           </p>
         </section>
 
@@ -98,8 +98,14 @@ const Home = () => {
             <a href="https://nextjs.org/blog/next-12#introducing-middleware">Middleware</a>
           </h2>
           <p>
-            Middleware allows for code over configuration via a `_middleware file`. This can be used on pages, and on APIS.
+            Middleware allows the ability to intercept requests and responses and manipulate data.
+            In NEXT.JS, this allows for code over configuration via a `_middleware file`. This can be used on pages, and on APIS.
+
+            <Link href="/geo">
+              <a className="block-link">Geo Localization</a>
+            </Link>
           </p>
+            
         </section>
 
         <section>
