@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import styles from '../styles/GeoCard.module.scss'
 export const getServerSideProps = ({ query }) => ({
   props: query,
 })
@@ -18,8 +18,23 @@ export default function Index({
 
   console.log(name)
   return (
-    <div>
-        <h1>{city}</h1>
+    <div className={styles.geoCard}>
+        <h1>{city} - <span>{region}</span></h1>
+        <div className={styles.country}>
+          <p>Country: {country}</p>
+          <Image
+            alt=""
+            src={`https://flagcdn.com/96x72/${country.toLowerCase()}.png`}
+            width={32}
+            height={20}
+          />
+        </div>
+        <p>Primary Language: {languages}</p>
+        <h2>{name}</h2>
+        <div className={styles.country}>
+          <span>Currency Code: {currencyCode}</span>
+          <span>Symbol: {currencySymbol}</span>
+        </div>
     </div>
   )
 }
