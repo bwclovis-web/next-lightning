@@ -1,0 +1,16 @@
+/*
+ * Skypack CDN - date-fns@2.25.0
+ *
+ * Learn more:
+ *   📙 Package Documentation: https://www.skypack.dev/view/date-fns
+ *   📘 Skypack Documentation: https://www.skypack.dev/docs
+ *
+ * Pinned URL: (Optimized for Production)
+ *   ▶️ Normal: https://cdn.skypack.dev/pin/date-fns@v2.25.0-nRvVPzhaF4wrJG23qOCi/mode=imports/optimized/date-fns.js
+ *   ⏩ Minified: https://cdn.skypack.dev/pin/date-fns@v2.25.0-nRvVPzhaF4wrJG23qOCi/mode=imports,min/optimized/date-fns.js
+ *
+ */
+
+// Browser-Optimized Imports (Don't directly import the URLs below in your application!)
+export * from '/-/date-fns@v2.25.0-nRvVPzhaF4wrJG23qOCi/dist=es2019,mode=imports/optimized/date-fns.js';
+export {default} from '/-/date-fns@v2.25.0-nRvVPzhaF4wrJG23qOCi/dist=es2019,mode=imports/optimized/date-fns.js';

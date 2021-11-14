@@ -1,0 +1,5 @@
+{
+  "https://cdn.skypack.dev/-/date-fns@v2.25.0-nRvVPzhaF4wrJG23qOCi/dist=es2019,mode=imports/optimized/date-fns.js": { "integrity": "sha512-YKzOYZCT6KamFFNpShQtxlrExsUOsg17GfezRIzaTs7aX4ErNwNN/Ef8LnNklNSqKcF397LI1zlrU2tokUPQjw==", "contentType": "application/javascript; charset=utf-8" },
+  "https://cdn.skypack.dev/date-fns": { "integrity": "sha512-5eX3UixFc5C0jjZN12zSwjziYcWLU0kCgUiz5R2MejB+tRg0OhO4YLybHV+4bpXDAuH2C8NgTP37UL0LmzW/0A==", "contentType": "application/javascript; charset=utf-8" },
+  "version": 1
+}
