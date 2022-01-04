@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import  Head  from 'next/head'
 
 const Home = () => {
   return (
       <>
+      <Head>
+        <title>This is a test page </title>
+        {/* <meta name="description" content="this is a page for testing" /> */}
+      </Head>
         <section>
             <h1>Next.js</h1>
             <p className="h3">The React Framework for Production </p>
