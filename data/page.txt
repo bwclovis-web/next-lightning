@@ -6,3 +6,6 @@ export default AboutPage;
 
 
 https://next-lightning-three.vercel.app
+
+https://next-lightning-three.vercel.app
+
