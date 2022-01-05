@@ -13,7 +13,8 @@
     "node-sass": "^6.0.1",
     "react": "^18.0.0-alpha-cb11155c8-20211112",
     "react-dom": "^18.0.0-alpha-cb11155c8-20211112",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "swr": "^1.1.2"
   },
   "devDependencies": {
     "eslint": "7",

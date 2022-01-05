@@ -5,8 +5,8 @@ module.exports = {
     domains: ['flagcdn.com']
   },
   experimental: {
-    // concurrentFeatures: true,
-    // serverComponents: true,
+    concurrentFeatures: true,
+    serverComponents: true,
     urlImports: ['https://cdn.skypack.dev']
   }
 }
